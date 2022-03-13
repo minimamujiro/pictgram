@@ -16,17 +16,17 @@ import javax.validation.ReportAsSingleViolation;
 @Retention(RetentionPolicy.RUNTIME)
 @ReportAsSingleViolation
 public @interface PasswordEquals {
-	
-	String message() default "{com.example.pictgram.validation.constraints.PasswordEquals.message}";
-	
-	Class<?>[] groups() default {};
-	
-	Class<? extends Payload>[] payload() default{};
-	
-	@Target({ ElementType.TYPE })
-	@Retention(RetentionPolicy.RUNTIME)
-	@Documented
-	public @interface List {
-		PasswordEquals[] value();
-	}
+
+    String message() default "{com.example.pictgram.validation.constraints.PasswordEquals.message}";
+
+    Class<?>[] groups() default {};
+
+    Class<? extends Payload>[] payload() default {};
+
+    @Target({ ElementType.TYPE })
+    @Retention(RetentionPolicy.RUNTIME)
+    @Documented
+    public @interface List {
+        PasswordEquals[] value();
+    }
 }
