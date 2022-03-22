@@ -89,5 +89,4 @@ public class S3Wrapper {
 
 		return s3ObjectSummaries;
 	}
-
 }
