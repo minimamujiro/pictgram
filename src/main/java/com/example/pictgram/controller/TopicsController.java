@@ -238,8 +238,9 @@ public class TopicsController {
 		File destFile = File.createTempFile("s3_", ".tmp");
 		image.transferTo(destFile);
 		
-		String url = "https;//" + awsBucket + ".s3_" + awsDefaultRegion + ".amazonaws.com/" + path;
-		
+		String url = "https://" + awsBucket + ".s3_" + awsDefaultRegion + ".amazonaws.com/" + path;
+
+
 		return url;
 	}
 }
