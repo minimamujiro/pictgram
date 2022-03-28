@@ -26,6 +26,7 @@ public class UsersController {
 	
 	@Autowired
 	private MessageSource messageSource; 
+	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
